@@ -39,6 +39,7 @@ export const skills: { category: string; items: string[] }[] = [
     items: [
       "Git",
       "Vite",
+      "Cypress",
       "AgGrid",
       "Tanstack Query",
       "pdfmake",
@@ -67,8 +68,8 @@ export const projects: Project[] = [
   {
     title: "This Portfolio Site",
     description:
-      "Personal portfolio built with React, TypeScript, MUI, and Vite. Deployed to GitHub Pages.",
-    tags: ["React", "TypeScript", "MUI", "Vite"],
+      "Personal portfolio built with React, TypeScript, MUI, and Vite. Includes Cypress e2e tests and deploys automatically to GitHub Pages via GitHub Actions CI/CD.",
+    tags: ["React", "TypeScript", "MUI", "Vite", "Cypress"],
     github: "https://github.com/atulmi/atul-intro-website",
     live: "https://atulmi.github.io/atul-intro-website/",
   },
