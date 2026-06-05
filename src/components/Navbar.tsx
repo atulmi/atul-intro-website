@@ -78,7 +78,7 @@ export default function Navbar() {
         anchor="right"
         open={drawerOpen}
         onClose={() => setDrawerOpen(false)}
-        PaperProps={{ sx: { width: 220 } }}
+        slotProps={{ paper: { sx: { width: 220 } } }}
       >
         <List sx={{ pt: 2 }}>
           {navLinks.map(({ label, href }) => (
