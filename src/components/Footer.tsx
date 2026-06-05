@@ -15,7 +15,7 @@ export default function Footer() {
       {/* Contact section */}
       <Box
         id="contact"
-        sx={{ bgcolor: 'background.paper', py: { xs: 6, md: 8 }, textAlign: 'center' }}
+        sx={{ bgcolor: 'background.default', py: { xs: 6, md: 8 }, textAlign: 'center' }}
       >
         <Container maxWidth="sm">
           <Typography

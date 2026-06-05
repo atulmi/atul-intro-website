@@ -1,6 +1,7 @@
 import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
+import Link from '@mui/material/Link'
 import { personal } from '../data/portfolio'
 
 export default function About() {
@@ -27,7 +28,11 @@ export default function About() {
         </Typography>
 
         <Typography sx={{ color: 'text.secondary', fontSize: '1.05rem', lineHeight: 1.8, maxWidth: 720 }}>
-          {personal.story}
+          {personal.story.split(', a career.')[0]},{' '}
+          <Link href="#experience" underline="hover" sx={{ color: 'primary.main', fontWeight: 500 }}>
+            a career
+          </Link>
+          .
         </Typography>
       </Container>
     </Box>

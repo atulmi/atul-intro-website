@@ -35,8 +35,8 @@ export default function Education() {
                 p: 3,
                 height: '100%',
                 borderRadius: 2,
-                borderColor: 'divider',
-                '&:hover': { borderColor: 'primary.main', boxShadow: 2 },
+                borderColor: 'primary.main',
+                '&:hover': { borderColor: 'primary.dark', boxShadow: 2 },
                 transition: 'border-color 0.2s, box-shadow 0.2s',
               }}
             >
