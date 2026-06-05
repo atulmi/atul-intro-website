@@ -3,7 +3,8 @@ export const personal = {
   title: "Web Developer",
   tagline:
     "Building user-friendly web apps with React, Vue, TypeScript, and Golang — across startups, nonprofits, and defense contractors.",
-  bio: "Web Developer with 5 years of frontend experience and 3 years of backend experience. Professionally, my stack is React, Vue, and TypeScript on the frontend, and Golang and PostgreSQL on the backend. Outside of work, I build a variety of Python tools and scripts. I also enjoy leveraging AI tools like Claude Code to accelerate development, and have worked across a range of environments — from fast-moving startups to major defense contractors.",
+  bio: "Web Developer with 5 years of frontend experience and 3 years of backend experience. My core tech stack is React, Vue, and TypeScript on the frontend and Golang/PostgreSQL on the backend, though I've also extensively used Python for my side projects. I'm proficient at leveraging AI tools like Claude Code to accelerate development and debugging, and have worked at organizations ranging from fast-moving startups to major defense contractors.",
+  resume: "Atul Murali Resume.pdf",
   github: "https://github.com/atulmi",
   linkedin: "https://www.linkedin.com/in/atul-murali-4703061a3/",
   email: "atul.murali@outlook.com",
@@ -116,8 +117,8 @@ export const experience: ExperienceItem[] = [
     company: "Rocket Communications, Inc — San Francisco, CA (Remote)",
     period: "July 2022 – April 2023",
     bullets: [
-      "Built 2 interactive React web apps simulating satellite management workflows for a defense contractor.",
-      "Rewrote a Vue application in React, TypeScript, and Redux as part of a 5-person team.",
+      "Built 2 interactive React web apps simulating satellite management workflows.",
+      "Rewrote a defense contractor's Vue app in React, TypeScript, and Redux as part of a 5-person team.",
       "Overhauled CSS and SCSS styles to match updated Figma designs from the UX team.",
     ],
   },

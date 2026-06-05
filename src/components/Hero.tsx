@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import DescriptionIcon from '@mui/icons-material/Description'
 import { personal } from '../data/portfolio'
 
 export default function Hero() {
@@ -73,6 +74,16 @@ export default function Hero() {
           </Box>
 
           <Box sx={{ display: 'flex', gap: 1, ml: -1 }}>
+            <Button
+              component="a"
+              href={`${import.meta.env.BASE_URL}${personal.resume}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              startIcon={<DescriptionIcon />}
+              sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main', bgcolor: 'transparent' } }}
+            >
+              Resume
+            </Button>
             <Button
               component="a"
               href={personal.github}

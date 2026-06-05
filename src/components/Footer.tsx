@@ -4,6 +4,7 @@ import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import Divider from '@mui/material/Divider'
 import EmailIcon from '@mui/icons-material/Email'
+import DescriptionIcon from '@mui/icons-material/Description'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import { personal } from '../data/portfolio'
@@ -29,8 +30,8 @@ export default function Footer() {
           </Typography>
 
           <Typography sx={{ color: 'text.secondary', mb: 5, lineHeight: 1.8 }}>
-            I&apos;m open to new opportunities. Whether you have a question, a project idea,
-            or just want to say hi — my inbox is always open.
+            I&apos;m actively looking for my next frontend or full-stack developer role.
+            If you know of a position that might be a good fit, I&apos;d love to hear from you.
           </Typography>
 
           <Button
@@ -44,6 +45,16 @@ export default function Footer() {
           </Button>
 
           <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1 }}>
+            <Button
+              component="a"
+              href={`${import.meta.env.BASE_URL}${personal.resume}`}
+              target="_blank"
+              rel="noopener noreferrer"
+              startIcon={<DescriptionIcon />}
+              sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main', bgcolor: 'transparent' } }}
+            >
+              Resume
+            </Button>
             <Button
               component="a"
               href={personal.github}
