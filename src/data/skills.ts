@@ -6,7 +6,6 @@ export const skills: { category: string; items: string[] }[] = [
       "React",
       "Vue",
       "TypeScript",
-      "JavaScript",
       "HTML/CSS",
       "Redux",
       "Bootstrap",
@@ -14,19 +13,14 @@ export const skills: { category: string; items: string[] }[] = [
     ],
   },
   {
-    category: "Backend",
-    items: ["Golang", "Python", "SQL", "REST APIs"],
-  },
-  {
-    category: "Database",
-    items: ["PostgreSQL", "MySQL", "MongoDB"],
+    category: "Backend & Databases",
+    items: ["Golang", "Python", "PostgreSQL", "MySQL", "MongoDB", "REST APIs"],
   },
   {
     category: "Tools",
     items: [
       "Claude Code",
       "Git",
-      "Vite",
       "Cypress",
       "AgGrid",
       "Tanstack Query",
