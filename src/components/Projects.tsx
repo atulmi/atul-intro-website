@@ -31,7 +31,7 @@ export default function Projects() {
         </Typography>
 
         <Typography sx={{ color: 'text.secondary', mb: 6, maxWidth: 520 }}>
-          A selection of projects spanning the full stack. Replace these with your real work.
+          Personal projects built in my spare time.
         </Typography>
 
         <Grid container spacing={3}>
@@ -44,7 +44,6 @@ export default function Projects() {
                   display: 'flex',
                   flexDirection: 'column',
                   borderRadius: 2,
-                  bgcolor: 'background.default',
                   borderColor: 'grey.300',
                   borderWidth: '1.5px',
                   transition: 'border-color 0.2s, box-shadow 0.2s, transform 0.2s',
@@ -74,12 +73,11 @@ export default function Projects() {
                         label={tag}
                         size="small"
                         sx={{
-                          bgcolor: 'grey.100',
-                          color: 'text.primary',
+                          bgcolor: 'rgba(37,99,235,0.1)',
+                          color: 'primary.main',
                           fontWeight: 500,
                           fontSize: '0.75rem',
-                          border: '1px solid',
-                          borderColor: 'grey.300',
+                          border: 'none',
                         }}
                       />
                     ))}

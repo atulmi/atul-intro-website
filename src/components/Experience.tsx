@@ -82,6 +82,7 @@ export default function Experience() {
                   p: 3,
                   flexGrow: 1,
                   borderRadius: 2,
+                  bgcolor: "background.default",
                   borderColor: "grey.300",
                   "&:hover": { borderColor: "primary.main", boxShadow: 2 },
                   transition: "border-color 0.2s, box-shadow 0.2s",

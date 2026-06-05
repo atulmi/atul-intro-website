@@ -27,7 +27,7 @@ export const skills: { category: string; items: string[] }[] = [
   },
   {
     category: "Backend",
-    items: ["Golang", "Node.js", "REST APIs", "SQL", "Python"],
+    items: ["Golang", "Python", "SQL", "REST APIs"],
   },
   {
     category: "Database",
