@@ -2,7 +2,7 @@ import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Link from '@mui/material/Link'
-import { personal } from '../data/portfolio'
+import { personal } from '../data/personal'
 
 export default function About() {
   return (

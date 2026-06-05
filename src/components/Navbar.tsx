@@ -11,7 +11,7 @@ import ListItemButton from '@mui/material/ListItemButton'
 import ListItemText from '@mui/material/ListItemText'
 import Box from '@mui/material/Box'
 import MenuIcon from '@mui/icons-material/Menu'
-import { personal } from '../data/portfolio'
+import { personal } from '../data/personal'
 
 const navLinks = [
   { label: 'About',      href: '#about' },

@@ -4,7 +4,7 @@ import Typography from '@mui/material/Typography'
 import Paper from '@mui/material/Paper'
 import Chip from '@mui/material/Chip'
 import Grid from '@mui/material/Grid'
-import { skills } from '../data/portfolio'
+import { skills } from '../data/skills'
 
 export default function Skills() {
   return (

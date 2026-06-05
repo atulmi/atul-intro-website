@@ -9,7 +9,7 @@ import Button from '@mui/material/Button'
 import Grid from '@mui/material/Grid'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import OpenInNewIcon from '@mui/icons-material/OpenInNew'
-import { projects } from '../data/portfolio'
+import { projects } from '../data/projects'
 
 export default function Projects() {
   return (

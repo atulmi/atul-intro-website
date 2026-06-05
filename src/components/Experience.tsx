@@ -5,7 +5,7 @@ import Paper from "@mui/material/Paper";
 import Divider from "@mui/material/Divider";
 import Link from "@mui/material/Link";
 import WorkIcon from "@mui/icons-material/Work";
-import { experience } from "../data/portfolio";
+import { experience } from "../data/experience";
 
 export default function Experience() {
   return (

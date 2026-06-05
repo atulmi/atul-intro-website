@@ -5,7 +5,7 @@ import Paper from "@mui/material/Paper";
 import Grid from "@mui/material/Grid";
 import SchoolIcon from "@mui/icons-material/School";
 import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
-import { education, certifications } from "../data/portfolio";
+import { education, certifications } from "../data/education";
 
 const cardSx = {
   p: 3,

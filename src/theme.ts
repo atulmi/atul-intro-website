@@ -1,3 +1,5 @@
+// background.paper (#f8fafc) is used for alternating section backgrounds;
+// background.default (#fff) is used for cards within those sections to create contrast
 import { createTheme } from '@mui/material/styles'
 
 const theme = createTheme({

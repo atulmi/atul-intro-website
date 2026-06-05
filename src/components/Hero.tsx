@@ -5,7 +5,7 @@ import Button from '@mui/material/Button'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import DescriptionIcon from '@mui/icons-material/Description'
-import { personal } from '../data/portfolio'
+import { personal } from '../data/personal'
 
 export default function Hero() {
   return (
