@@ -9,6 +9,7 @@ import Projects from './components/Projects'
 import Experience from './components/Experience'
 import Education from './components/Education'
 import Footer from './components/Footer'
+import ScrollToTop from './components/ScrollToTop'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Education />
       </main>
       <Footer />
+      <ScrollToTop />
     </ThemeProvider>
   )
 }

@@ -1,21 +1,21 @@
 // background.paper (#f8fafc) is used for alternating section backgrounds;
 // background.default (#fff) is used for cards within those sections to create contrast
-import { createTheme } from '@mui/material/styles'
+import { createTheme } from "@mui/material/styles";
 
 const theme = createTheme({
   palette: {
-    mode: 'light',
+    mode: "light",
     primary: {
-      main: '#2563eb',
-      dark: '#1d4ed8',
+      main: "#2563eb",
+      dark: "#1d4ed8",
     },
     background: {
-      default: '#ffffff',
-      paper: '#f8fafc',
+      default: "#ffffff",
+      paper: "#f8fafc",
     },
     text: {
-      primary: '#0f172a',
-      secondary: '#64748b',
+      primary: "#0f172a",
+      secondary: "#64748b",
     },
   },
   typography: {
@@ -24,21 +24,22 @@ const theme = createTheme({
     h2: { fontWeight: 700 },
     h3: { fontWeight: 600 },
     h4: { fontWeight: 600 },
-    button: { textTransform: 'none', fontWeight: 500 },
+    button: { textTransform: "none", fontWeight: 500 },
   },
   shape: { borderRadius: 8 },
   components: {
     MuiButton: {
       styleOverrides: {
-        root: { textTransform: 'none' },
+        root: { textTransform: "none" },
       },
     },
     MuiCssBaseline: {
       styleOverrides: {
-        html: { scrollBehavior: 'smooth' },
+        html: { scrollBehavior: "smooth" },
+        section: { scrollMarginTop: "10px" },
       },
     },
   },
-})
+});
 
-export default theme
+export default theme;

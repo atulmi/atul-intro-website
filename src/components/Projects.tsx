@@ -7,6 +7,7 @@ import CardActions from "@mui/material/CardActions";
 import Chip from "@mui/material/Chip";
 import Button from "@mui/material/Button";
 import Grid from "@mui/material/Grid";
+import Link from "@mui/material/Link";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { projects } from "../data/projects";
@@ -37,8 +38,16 @@ export default function Projects() {
           Things I&apos;ve Developed
         </Typography>
 
-        <Typography sx={{ color: "text.secondary", mb: 6, maxWidth: 520 }}>
-          A selection of projects built in my spare time.
+        <Typography sx={{ color: "text.secondary", mb: 8 }}>
+          A selection of projects built in my spare time. Also check out my{" "}
+          <Link
+            href="#experience"
+            underline="hover"
+            sx={{ color: "primary.main", fontWeight: 500 }}
+          >
+            professional experience
+          </Link>{" "}
+          if you haven't already.
         </Typography>
 
         <Grid container spacing={3}>

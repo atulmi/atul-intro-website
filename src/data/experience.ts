@@ -9,7 +9,7 @@ export interface ExperienceItem {
 export const experience: ExperienceItem[] = [
   {
     title: "Software Engineer Intern",
-    company: "Manetu, Inc — Remote",
+    company: "Manetu, Inc — Ridgewood, NJ (Remote)",
     period: "Dec 2025 – Present",
     bullets: [
       "Using Python and MCP to explore the intersection of AI agents and access control policies.",
