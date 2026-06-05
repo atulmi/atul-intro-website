@@ -38,8 +38,9 @@ describe('Portfolio Site', () => {
   })
 
   context('Experience section', () => {
-    it('shows all four employers', () => {
+    it('shows all employers', () => {
       cy.get('#experience').within(() => {
+        cy.contains('Manetu').should('exist')
         cy.contains('Vivid Kids Foundation').should('exist')
         cy.contains('Smart Connections Consulting').should('exist')
         cy.contains('Rocket Communications').should('exist')
@@ -57,7 +58,7 @@ describe('Portfolio Site', () => {
       cy.get('#projects').within(() => {
         cy.contains('Wikipedia Country Notes').should('exist')
         cy.contains('This Portfolio Site').should('exist')
-        cy.contains('PDF Toolkit').should('exist')
+        cy.contains('Personal Python Projects').should('exist')
       })
     })
 
@@ -67,19 +68,18 @@ describe('Portfolio Site', () => {
       })
     })
 
-    it('portfolio site card has a live link', () => {
+    it('portfolio site card has a GitHub link', () => {
       cy.get('#projects').contains('This Portfolio Site').closest('.MuiCard-root').within(() => {
-        cy.get('a[href*="github.io"]').should('exist')
+        cy.get('a[href*="github.com/atulmi"]').should('exist')
       })
     })
   })
 
   context('Skills section', () => {
-    it('shows all four skill categories', () => {
+    it('shows all skill categories', () => {
       cy.get('#skills').within(() => {
         cy.contains('Frontend').should('exist')
-        cy.contains('Backend').should('exist')
-        cy.contains('Database').should('exist')
+        cy.contains('Backend & Databases').should('exist')
         cy.contains('Tools').should('exist')
       })
     })
