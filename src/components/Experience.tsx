@@ -33,11 +33,8 @@ export default function Experience() {
           Where I&apos;ve Worked
         </Typography>
 
-        <Typography sx={{ color: "text.secondary", mb: 6, maxWidth: 520 }}>
-          A summary of my professional background.{" "}
-          <Link href="#contact" underline="hover" sx={{ color: "primary.main", fontWeight: 500 }}>
-            Interested? Get in touch.
-          </Link>
+        <Typography sx={{ color: "text.secondary", mb: 6 }}>
+          A summary of my professional background.
         </Typography>
 
         {/* Timeline */}
@@ -147,6 +144,12 @@ export default function Experience() {
             </Box>
           ))}
         </Box>
+
+        <Typography sx={{ color: "text.secondary", mt: 5 }}>
+          <Link href="#contact" underline="hover" sx={{ color: "primary.main", fontWeight: 500 }}>
+            Interested? Get in touch.
+          </Link>
+        </Typography>
       </Container>
     </Box>
   );

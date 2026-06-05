@@ -54,35 +54,35 @@ export default function Projects() {
                   },
                 }}
               >
-                <CardContent sx={{ flexGrow: 1, p: 3 }}>
+                <CardContent sx={{ flexGrow: 1, p: 3, pb: '12px !important' }}>
                   <Typography variant="h3" sx={{ mb: 1.5, fontSize: '1.1rem' }}>
                     {project.title}
                   </Typography>
 
                   <Typography
                     variant="body2"
-                    sx={{ color: 'text.secondary', lineHeight: 1.7, mb: 2.5 }}
+                    sx={{ color: 'text.secondary', lineHeight: 1.7 }}
                   >
                     {project.description}
                   </Typography>
-
-                  <Box sx={{ display: 'flex', flexWrap: 'wrap', gap: 0.75 }}>
-                    {project.tags.map((tag) => (
-                      <Chip
-                        key={tag}
-                        label={tag}
-                        size="small"
-                        sx={{
-                          bgcolor: 'rgba(37,99,235,0.1)',
-                          color: 'primary.main',
-                          fontWeight: 500,
-                          fontSize: '0.75rem',
-                          border: 'none',
-                        }}
-                      />
-                    ))}
-                  </Box>
                 </CardContent>
+
+                <Box sx={{ px: 3, pb: 1.5, display: 'flex', flexWrap: 'wrap', gap: 0.75 }}>
+                  {project.tags.map((tag) => (
+                    <Chip
+                      key={tag}
+                      label={tag}
+                      size="small"
+                      sx={{
+                        bgcolor: 'rgba(37,99,235,0.1)',
+                        color: 'primary.main',
+                        fontWeight: 500,
+                        fontSize: '0.75rem',
+                        border: 'none',
+                      }}
+                    />
+                  ))}
+                </Box>
 
                 <CardActions sx={{ px: 3, pb: 2.5, gap: 1 }}>
                   {project.github && project.github !== '#' && (

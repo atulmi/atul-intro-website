@@ -2,7 +2,6 @@ import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
-import IconButton from '@mui/material/IconButton'
 import GitHubIcon from '@mui/icons-material/GitHub'
 import LinkedInIcon from '@mui/icons-material/LinkedIn'
 import { personal } from '../data/portfolio'
@@ -73,27 +72,27 @@ export default function Hero() {
             </Button>
           </Box>
 
-          <Box sx={{ display: 'flex', gap: 0.5, ml: -1 }}>
-            <IconButton
+          <Box sx={{ display: 'flex', gap: 1, ml: -1 }}>
+            <Button
               component="a"
               href={personal.github}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="GitHub profile"
-              sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main' } }}
+              startIcon={<GitHubIcon />}
+              sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main', bgcolor: 'transparent' } }}
             >
-              <GitHubIcon />
-            </IconButton>
-            <IconButton
+              GitHub
+            </Button>
+            <Button
               component="a"
               href={personal.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn profile"
-              sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main' } }}
+              startIcon={<LinkedInIcon />}
+              sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main', bgcolor: 'transparent' } }}
             >
-              <LinkedInIcon />
-            </IconButton>
+              LinkedIn
+            </Button>
           </Box>
         </Box>
       </Container>

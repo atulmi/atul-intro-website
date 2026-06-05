@@ -2,7 +2,6 @@ import Box from '@mui/material/Box'
 import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
-import IconButton from '@mui/material/IconButton'
 import Divider from '@mui/material/Divider'
 import EmailIcon from '@mui/icons-material/Email'
 import GitHubIcon from '@mui/icons-material/GitHub'
@@ -45,26 +44,26 @@ export default function Footer() {
           </Button>
 
           <Box sx={{ display: 'flex', justifyContent: 'center', gap: 1 }}>
-            <IconButton
+            <Button
               component="a"
               href={personal.github}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="GitHub profile"
-              sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main' } }}
+              startIcon={<GitHubIcon />}
+              sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main', bgcolor: 'transparent' } }}
             >
-              <GitHubIcon />
-            </IconButton>
-            <IconButton
+              GitHub
+            </Button>
+            <Button
               component="a"
               href={personal.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              aria-label="LinkedIn profile"
-              sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main' } }}
+              startIcon={<LinkedInIcon />}
+              sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main', bgcolor: 'transparent' } }}
             >
-              <LinkedInIcon />
-            </IconButton>
+              LinkedIn
+            </Button>
           </Box>
         </Container>
       </Box>

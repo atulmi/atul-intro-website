@@ -60,23 +60,23 @@ export const projects: Project[] = [
     description:
       "Interactive world map where users click countries to explore random Wikipedia articles. Lets users save Wikipedia summaries as notes or write their own custom country notes.",
     tags: ["React", "TypeScript", "Node.js", "MongoDB"],
-    github: "#",
-    live: "#",
+    github: "https://github.com/atulmi/global-history-app",
+    live: null,
   },
   {
-    title: "Grocer-E",
+    title: "This Portfolio Site",
     description:
-      "Mini grocery shopping website built in an Agile team of 10. Features a React frontend integrated with a Firebase backend for real-time data.",
-    tags: ["React", "Bootstrap", "CSS", "Firebase"],
-    github: "#",
-    live: null,
+      "Personal portfolio built with React, TypeScript, MUI, and Vite. Deployed to GitHub Pages.",
+    tags: ["React", "TypeScript", "MUI", "Vite"],
+    github: "https://github.com/atulmi/atul-intro-site",
+    live: "https://atulmi.github.io/atul-intro-site/",
   },
   {
     title: "PDF Toolkit",
     description:
       "Two Python utilities: one generates a spreadsheet of all PDFs in a folder with page counts; the other produces customizable note-taking templates with adjustable heading granularity.",
     tags: ["Python"],
-    github: "#",
+    github: "https://github.com/atulmi/atul-personal-projects",
     live: null,
   },
 ];
@@ -94,9 +94,10 @@ export const experience: ExperienceItem[] = [
     company: "Vivid Kids Foundation — Costa Mesa, CA (Remote)",
     period: "Sept 2024 – Present",
     bullets: [
-      "Built an educational testing app for child specialists using React, Redux, and TypeScript, including dual-monitor and multi-stream video/audio recording.",
-      "Led end-to-end development of a PDF report feature, generating comprehensive performance reports using pdfmake.",
-      "Integrated the React frontend with a Golang + PostgreSQL backend; migrated the DB layer from SQLX to GORM.",
+      "Built a dual-monitor educational testing app enabling child specialists to conduct assessments for special needs children. Used React, Redux, and TypeScript.",
+      "Led end-to-end development of a report feature letting specialists generate comprehensive performance reports and graphs, using pdfmake to export the full report as a PDF.",
+      "Implemented multi-stream video recording across webcams, plus per-task audio recording and webcam snapshots throughout assessments.",
+      "Integrated the React frontend with a Golang + PostgreSQL backend; updated multiple services and migrated the database layer from SQLX to GORM.",
       "Upgraded to the latest React and MUI; migrated the build tool from React-Scripts to Vite, cutting build time from 2 min to ~5 sec.",
     ],
   },
@@ -125,9 +126,11 @@ export const experience: ExperienceItem[] = [
     company: "NeuroLeap Corp — San Jose, CA (Remote)",
     period: "May 2020 – Dec 2022",
     bullets: [
-      "Built an educational testing app with React, Redux, and TypeScript for cognitive and motor skill assessments, collaborating with 10 interns.",
-      "Developed an admin dashboard using Vue and Bootstrap for creating and deploying custom exams.",
-      "Updated Golang REST APIs and PostgreSQL schemas, focusing on authentication (login, registration, password recovery).",
+      "Built an educational testing app with React, Redux, and TypeScript for assessing children's cognitive, language, and motor skills, collaborating with a team of 10 interns.",
+      "Developed an admin dashboard with Vue and Bootstrap for creating and deploying custom exams to assess and improve child performance.",
+      "Built an informational website for parents of special needs children using Vue, Vuex, and CSS.",
+      "Updated Golang REST APIs and PostgreSQL schemas focusing on authentication (login, registration, password recovery); integrated backend changes with the React and Vue frontends.",
+      "Wrote technical onboarding documentation to resolve common setup issues for new interns, reducing onboarding time; assisted interns with coding tasks and machine setup.",
     ],
   },
 ];
