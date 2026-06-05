@@ -10,35 +10,24 @@ import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemText from '@mui/material/ListItemText'
 import Box from '@mui/material/Box'
-import useScrollTrigger from '@mui/material/useScrollTrigger'
 import MenuIcon from '@mui/icons-material/Menu'
 import { personal } from '../data/portfolio'
 
 const navLinks = [
   { label: 'About',      href: '#about' },
   { label: 'Skills',     href: '#skills' },
-  { label: 'Projects',   href: '#projects' },
   { label: 'Experience', href: '#experience' },
+  { label: 'Projects',   href: '#projects' },
+  { label: 'Education',  href: '#education' },
   { label: 'Contact',    href: '#contact' },
 ]
 
 export default function Navbar() {
   const [drawerOpen, setDrawerOpen] = useState(false)
-  const scrolled = useScrollTrigger({ disableHysteresis: true, threshold: 20 })
 
   return (
     <>
-      <AppBar
-        position="fixed"
-        elevation={scrolled ? 2 : 0}
-        sx={{
-          bgcolor: 'rgba(255,255,255,0.85)',
-          backdropFilter: 'blur(8px)',
-          borderBottom: scrolled ? '1px solid' : '1px solid transparent',
-          borderColor: scrolled ? 'divider' : 'transparent',
-          transition: 'border-color 0.2s, box-shadow 0.2s',
-        }}
-      >
+      <AppBar position="fixed" elevation={2} sx={{ bgcolor: 'primary.main' }}>
         <Toolbar sx={{ maxWidth: 1100, width: '100%', mx: 'auto', px: { xs: 2, sm: 3 } }}>
           <Typography
             component="a"
@@ -47,10 +36,10 @@ export default function Navbar() {
             sx={{
               flexGrow: 1,
               fontWeight: 700,
-              color: 'text.primary',
+              color: '#fff',
               textDecoration: 'none',
               letterSpacing: '-0.02em',
-              '&:hover': { color: 'primary.main' },
+              '&:hover': { color: 'rgba(255,255,255,0.8)' },
             }}
           >
             {personal.name}
@@ -62,7 +51,10 @@ export default function Navbar() {
               <Button
                 key={href}
                 href={href}
-                sx={{ color: 'text.secondary', '&:hover': { color: 'primary.main' } }}
+                sx={{
+                  color: 'rgba(255,255,255,0.85)',
+                  '&:hover': { color: '#fff', bgcolor: 'rgba(255,255,255,0.1)' },
+                }}
               >
                 {label}
               </Button>
@@ -74,7 +66,7 @@ export default function Navbar() {
             edge="end"
             aria-label="open menu"
             onClick={() => setDrawerOpen(true)}
-            sx={{ display: { sm: 'none' }, color: 'text.primary' }}
+            sx={{ display: { sm: 'none' }, color: '#fff' }}
           >
             <MenuIcon />
           </IconButton>
