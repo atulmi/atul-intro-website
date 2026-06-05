@@ -3,7 +3,7 @@ export const personal = {
   title: "Web Developer",
   tagline:
     "Building user-friendly web apps with React, Vue, TypeScript, and Golang — across startups, nonprofits, and defense contractors.",
-  bio: "Web Developer with 5 years of frontend experience and 3 years of backend experience. My core stack is React, Vue, and TypeScript on the frontend, and Golang and PostgreSQL on the backend. I enjoy leveraging AI tools like Claude Code to accelerate feature development, and have worked across a range of environments — from fast-moving startups to major defense contractors.",
+  bio: "Web Developer with 5 years of frontend experience and 3 years of backend experience. Professionally, my stack is React, Vue, and TypeScript on the frontend, and Golang and PostgreSQL on the backend. Outside of work, I build a variety of Python tools and scripts. I also enjoy leveraging AI tools like Claude Code to accelerate development, and have worked across a range of environments — from fast-moving startups to major defense contractors.",
   github: "https://github.com/atulmi",
   linkedin: "https://www.linkedin.com/in/atul-murali-4703061a3/",
   email: "atul.murali@outlook.com",
@@ -68,8 +68,8 @@ export const projects: Project[] = [
     description:
       "Personal portfolio built with React, TypeScript, MUI, and Vite. Deployed to GitHub Pages.",
     tags: ["React", "TypeScript", "MUI", "Vite"],
-    github: "https://github.com/atulmi/atul-intro-site",
-    live: "https://atulmi.github.io/atul-intro-site/",
+    github: "https://github.com/atulmi/atul-intro-website",
+    live: "https://atulmi.github.io/atul-intro-website/",
   },
   {
     title: "PDF Toolkit",
