@@ -28,7 +28,7 @@ export default function Navbar() {
   return (
     <>
       <AppBar position="fixed" elevation={2} sx={{ bgcolor: 'primary.main' }}>
-        <Toolbar sx={{ maxWidth: 1100, width: '100%', mx: 'auto', px: { xs: 2, sm: 3 } }}>
+        <Toolbar sx={{ maxWidth: 1200, width: '100%', mx: 'auto', px: { xs: 2, sm: 3 } }}>
           <Typography
             component="a"
             href="#hero"

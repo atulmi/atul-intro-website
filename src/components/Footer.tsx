@@ -41,10 +41,12 @@ export default function Footer() {
           </Typography>
 
           <Typography sx={{ color: "text.secondary", mb: 5, lineHeight: 1.8 }}>
-            I'm actively looking for my next frontend or full-stack developer
-            role. I bring 5 years of React and Vue experience, 3 years of Golang
-            and Postgres experience, and proficiency with AI-assisted
-            development. If you think there's a fit, I'd love to hear from you!
+            Thanks for reading this far! I'm actively searching for frontend and
+            full-stack roles, and would love to connect with anyone who's hiring
+            in this space. I bring 5 years of React and Vue experience, 3 years
+            of Golang and Postgres experience, and proficiency with AI-assisted
+            development. If you think there's a fit, feel free to reach out on
+            LinkedIn or email me!
           </Typography>
 
           <Button

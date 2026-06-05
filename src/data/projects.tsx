@@ -13,7 +13,7 @@ export const projects: Project[] = [
   {
     title: "Wikipedia Country Notes",
     description:
-      "Interactive world map where users click countries to explore random Wikipedia articles. Lets users save Wikipedia summaries as notes or write their own custom country notes. Built with Claude Code.",
+      "Interactive world map where users click countries to explore random Wikipedia articles on those countries. Lets users save Wikipedia summaries as notes or write their own custom country notes. Built with Claude Code.",
     tags: ["React", "TypeScript", "Node.js", "MongoDB"],
     github: "https://github.com/atulmi/global-history-app",
     live: null,
