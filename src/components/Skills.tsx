@@ -3,7 +3,7 @@ import Container from '@mui/material/Container'
 import Typography from '@mui/material/Typography'
 import Paper from '@mui/material/Paper'
 import Chip from '@mui/material/Chip'
-import Grid from '@mui/material/Grid2'
+import Grid from '@mui/material/Grid'
 import { skills } from '../data/portfolio'
 
 export default function Skills() {
